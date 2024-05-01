@@ -8,8 +8,8 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var diceImage: ImageView
-    private var index = 1
+    private lateinit var diceImage: ImageView
+    private var index = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        val rollButton: Button = findViewById(R.id.left1)
+
         rollButton.setOnClickListener {
             if(index > 1) {
                 rollDice()
